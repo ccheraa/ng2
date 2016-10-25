@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<h3>{{subtitle}}</h3>
+<ul>
+	<li *ngFor="let route of routes"><a [routerLink]="[route.url]">{{route.text}}</a></li>
+</ul>
+<hr>
+<router-outlet></router-outlet>
